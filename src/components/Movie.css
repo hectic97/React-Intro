@@ -12,11 +12,8 @@
     width: 45%;
     background-color: white;
     margin-bottom: 70px;
-    align-items: flex-start;
-    justify-content: space-between;
     font-weight: 300;
     padding: 20px;
-    display: flex;
     border-radius: 5px;
     color: #adaeb9;
     box-shadow: 0 13px 27px -5px rgba(50,50,93,0.25),
@@ -61,4 +58,12 @@
 .movie__genres li {
     margin-right: 10px;
     font-size: 14px;
+}
+
+.movies .movie a {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-decoration: none;
+    color: inherit;
 }
