@@ -72,7 +72,7 @@ class Game extends React.Component {
     });
   }
 
-  jumpTo(step) {
+  jumpTo(step) { // if state changes rerendering game components
     this.setState({
       stepNumber: step,
       xIsNext: (step % 2) === 0,
@@ -80,6 +80,7 @@ class Game extends React.Component {
   }
 
   render() {
+    console.log("RENDERING");
     const history = this.state.history;
     const current = history[this.state.stepNumber];
     const winner = calculateWinner(current.squares);
